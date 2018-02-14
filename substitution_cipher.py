@@ -1,5 +1,16 @@
-alphabet = "abcdefghijklmnopqrstuvwxyz "
-key = "qwertyuioplkjhgfdsazxcvbnm "
+import random
+
+alphabet = ""
+for i in range(32,127):
+    alphabet += chr(i)
+print(alphabet)
+
+
+key = ""
+for n in alphabet:
+    key = n + key
+print(key)
+
 
 def encrypt(message):
     result = ""
